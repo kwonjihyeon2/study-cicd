@@ -28,10 +28,10 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          click here! count is {count}
+          count is {count}
         </button>
         <p>
-          api called : <code id="greet"></code>
+          here!!! api called : <code id="greet"></code>
         </p>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
