@@ -8,7 +8,7 @@ function App() {
 
   const hello = () => {
     const greet = document.getElementById("greet");
-    fetch("http://localhost:4000/api/hello")
+    fetch(`${import.meta.env.VITE_API_SERVER}/api/hello`)
       .then((res) => res.json())
       .then((dta) => (greet.innerHTML = JSON.stringify(dta)));
   };
