@@ -27,6 +27,9 @@ const openapiSpec = swaggerJsdoc(options);
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(openapiSpec)); //주소줄에 접근하면 swagger문서 확인 가능
 
+var cors = require("cors");
+app.use(cors());
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
